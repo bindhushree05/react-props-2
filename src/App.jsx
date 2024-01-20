@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 
 function App(props) {
@@ -6,22 +7,20 @@ function App(props) {
 
   return (
     <div>
-      <h1>Kalvium Gallary</h1>
-      <div className="row">
-
+    <h1>Kalvium gallery</h1>
+    <div className="row">
       {
         imgData.map((image) => {
-          return (
+          return(
             <div className="column"key={image.id}>
-        <img src={image.img} alt="" />
-      </div>
-
+              <img src={image.img} alt="" />
+            </div>
           )
         })
-      }  
-      
+      }
     </div>
     </div>
-  );
+  )
 }
+
 export default App;

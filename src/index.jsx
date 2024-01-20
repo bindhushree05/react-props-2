@@ -1,12 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-// import AppClass from './Appclass.jsx'
+import AppClass from './AppClass.jsx'
 import './index.css'
-import Data from './components/Datacomponents'
+import DataComponent from './components/Datacomponents.jsx'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
-    <App data={Data}/>
-  </React.StrictMode>,
-)
+    <App data={DataComponent}/>
+    <AppClass data={DataComponent}/>
+  </React.StrictMode>
+);

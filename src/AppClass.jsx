@@ -1,7 +1,6 @@
-import { Component } from "react";
+import React ,{Component} from "react";
 import "./App.css"
 export default class AppClass extends Component{
-  // code here
   render(){
     const imgData = this.props.data;
     return (
